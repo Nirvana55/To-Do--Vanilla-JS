@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./javascript/main.js" defer></script>
+	</head>
+	<body>
+		<div class="top__image"></div>
+		<main>
+			<header>
+				<div class="container">
+					<div class="heading__logos flex__items">
+						<div class="logo">
+							<h1>TODO</h1>
+						</div>
+						<div class="toggle__button"></div>
+					</div>
+				</div>
+			</header>
+
+			<section class="input__box container">
+				<div class="input__holder">
+					<div class="circle"></div>
+					<input
+						type="text"
+						id="create__Todo"
+						placeholder="Create a new todo.."
+						required
+					/>
+				</div>
+
+				<div id="todos"></div>
+				<div class="remarks">
+					<div class="completed__Count">0 items left</div>
+					<div class="filters__one">
+						<div
+							style="cursor: pointer"
+							onclick="all__list()"
+							class="filter__Active"
+						>
+							All
+						</div>
+						<div style="cursor: pointer" onclick="active__list()">Active</div>
+						<div style="cursor: pointer" onclick="completed__list()">
+							Completed
+						</div>
+					</div>
+					<div class="filters__two">
+						<div
+							style="cursor: pointer"
+							onclick="all__list()"
+							class="filter__Active"
+						>
+							All
+						</div>
+						<div style="cursor: pointer" onclick="active__list()">Active</div>
+						<div style="cursor: pointer" onclick="completed__list()">
+							Completed
+						</div>
+					</div>
+					<div id="clear" onclick="clear__Completed()">Clear Completed</div>
+				</div>
+			</section>
+			<div class="drag_drop">
+				<h2 class="drag">Drag and drop to re arrange the list</h2>
+			</div>
+		</main>
+	</body>
+</html>
